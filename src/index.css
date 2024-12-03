@@ -1,0 +1,130 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.paginated-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.paginated-table__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.paginated-table__header {
+  background-color: #3f51b5;
+  color: white;
+  text-transform: uppercase;
+}
+
+.paginated-table__header-cell {
+  padding: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #3548a4;
+  text-align: left;
+}
+
+.paginated-table__body .paginated-table__row:nth-child(even) {
+  background-color: #f5f1ff;
+}
+
+.paginated-table__row:hover {
+  background-color: #e8e0ff;
+  transition: background-color 0.3s ease;
+}
+
+.paginated-table__cell {
+  padding: 16px;
+  font-size: 14px;
+  color: #4a4a4a;
+  border-bottom: 1px solid #ddd;
+}
+
+.paginated-table__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9ff;
+  border-top: 2px solid #ddd;
+  border-radius: 0 0 12px 12px;
+  font-size: 14px;
+}
+
+.paginated-table__button {
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginated-table__button:disabled {
+  background-color: #d1b3ff;
+  cursor: not-allowed;
+}
+
+.paginated-table__button:hover:not(:disabled) {
+  background-color: #5e35b1;
+}
+
+.paginated-table__page-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.paginated-table__input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: #222;
+  transition: border-color 0.3s;
+}
+
+.paginated-table__input:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 4px rgba(63, 81, 181, 0.4);
+}
