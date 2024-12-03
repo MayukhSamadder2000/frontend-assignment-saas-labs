@@ -18,6 +18,11 @@ export default [
       },
     },
     settings: { react: { version: "18.3" } },
+    env: {
+      jest: true,
+      browser: true,
+    },
+    extends: ["plugin:jest/recommended"],
     plugins: {
       react,
       "react-hooks": reactHooks,
