@@ -1,4 +1,4 @@
-import { useHandleTableData } from "../../hooks/usehandleTableData";
+import { useHandleTableData } from "../../hooks/useHandleTableData";
 
 const PaginatedTable = ({ data = [], itemsPerPage, loading = true }) => {
   const {
